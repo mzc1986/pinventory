@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:text="Product Location"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etProductLocation"
+        app:layout_constraintStart_toStartOf="@+id/tvAddress1" />
+
+    <EditText
+        android:id="@+id/etProductLocation"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="left"
+        android:hint="Select Location"
+        android:inputType="textMultiLine"
+        android:padding="3dip"
+        app:layout_constraintEnd_toEndOf="@+id/etDescription"
+        app:layout_constraintTop_toBottomOf="@+id/etProductPrice" />
+
+    <Button
+        android:id="@+id/btnChooseImage"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:padding="3dip"
+        android:text="SELECT IMAGES"
+        app:layout_constraintEnd_toEndOf="@+id/etProductPrice"
+        app:layout_constraintStart_toStartOf="@+id/tvAddress1"
+        app:layout_constraintTop_toBottomOf="@+id/etProductLocation" />
+
+    <Button
+        android:id="@+id/btnPost"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="left"
+        android:hint="Product Description"
+        android:inputType="textMultiLine"
+        android:padding="3dip"
+        app:layout_constraintEnd_toEndOf="@+id/etProductName"
+        app:layout_constraintStart_toStartOf="@+id/etProductName"
+        app:layout_constraintTop_toBottomOf="@+id/etProductName" />
+
+    <EditText
+        android:id="@+id/etProductPrice"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="left"
+        android:hint="500.00"
+        android:padding="3dip"
+        app:layout_constraintEnd_toEndOf="@+id/etDescription"
+        app:layout_constraintTop_toBottomOf="@+id/etDescription" />
+
+
+    <EditText
+        android:id="@+id/etProductName"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="left"
+        android:hint="Name"
+        android:padding="3dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvProductUrl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivSelectedImage"
+        android:layout_width="315dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChooseImage" />
+
+
+    <TextView
+        android:id="@+id/tvAddress1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:text="Product Price"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etProductPrice"
+        app:layout_constraintStart_toStartOf="@+id/tvAddress2" />
+
+    <TextView
+        android:id="@+id/tvProductUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:text="Product Name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etProductName"
+        app:layout_constraintEnd_toStartOf="@+id/etProductName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:text="Description "
+        app:layout_constraintBaseline_toBaselineOf="@+id/etDescription"
+        app:layout_constraintStart_toStartOf="@+id/tvProductUrl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Product Inventory</string>
+    <string name="title_activity_product_details">ProductDetailsActivity</string>
+    <string name="GoogleAPIKey">AIzaSyA98f7fcU664CGkG-SHxxQloXF2F9jrhIs</string>
+</resources>
